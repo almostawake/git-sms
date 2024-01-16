@@ -1,0 +1,18 @@
+{
+    "functions": {
+      "source": "./dist", 
+      "predeploy": [
+        "npm --prefix \"./src\" run lint" 
+      ]
+    },
+    "hosting": {
+      "public": "public", 
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"] 
+    },
+    "emulators": {
+      "functions": {
+        "source": "src" 
+      }
+    }
+  }
+  
