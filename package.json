@@ -4,7 +4,7 @@
   "description": "",
   "main": "smsOnNewCommitCF.js",
   "scripts": {
-    "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/smsOnNewCommit.ts",
+    "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/smsOnNewCommitCF.ts",
     "compile": "tsc",
     "debug": "node --inspect node_modules/.bin/functions-framework --source=./dist/ --target=smsOnNewCommitCF",
     "watch": "concurrently \"npm run compile -- --watch\" \"nodemon --watch ./dist/ --exec npm run debug\""
